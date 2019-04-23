@@ -7,6 +7,7 @@ class Question
     end
 
     def ask_question
+        puts "======================================"
         puts question
     end
     def print_answer_choices
