@@ -10,13 +10,13 @@ class Question
         puts question
     end
     def print_answer_choices
-        puts "====================="
+        puts "\n"
         # puts @answer_choices
         puts "a) #{@answer_choices[:a]}"
         puts "b) #{@answer_choices[:b]}"
         puts "c) #{@answer_choices[:c]}"
         puts "d) #{@answer_choices[:d]}"
-        puts "====================="
+        puts "\n"
     end
 
 
@@ -45,3 +45,17 @@ puts question.correct_answer
 # Can print the correct answer
 # Expected: returns "b) class"
 question.print_correct_answer
+
+def run_test(questions)
+    user_answer = ""
+    score = 0
+    for question in questions
+        puts question.question
+        user_answer = gets.chomp
+        if answer == question.answer
+            score += 1 #incrament a store variable
+        end
+    end
+end
+
+puts (\"You got #{score} "/" #{question.length}\)
