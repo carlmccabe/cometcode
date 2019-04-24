@@ -1,41 +1,40 @@
 :q1:
-- :question: What is the keyword to start a class?
-- :answers:
-  - :a: end
-    :b: class
-    :c: def
-    :d: begin
-- :correct: b
+    :question: What is the keyword to start a class?
+    :answers:
+        :a: end
+        :b: class
+        :c: def
+        :d: begin
+    :correct: b
 :q2:
-- :question: What is the keyword to end a class?
-- :answers:
-  - :a: end
-    :b: class
-    :c: def
-    :d: begin
-- :correct: a
+    :question: What is the keyword to end a class?
+    :answers:
+        :a: end
+        :b: class
+        :c: def
+        :d: begin
+    :correct: a
 :q3:
-- :question: Who designed and developed Ruby?
-- :answers:
-  - :a: Kyoto Osaka
-    :b: Nara Hakone
-    :c: Yukihiro Matsumoto
-    :d: Ajinomoto
-- :correct: c
+    :question: Who designed and developed Ruby?
+    :answers:
+        :a: Kyoto Osaka
+        :b: Nara Hakone
+        :c: Yukihiro Matsumoto
+        :d: Ajinomoto
+    :correct: c
 :q4:
-- :question: What method will convert a string to an integer?
-- :answers:
-  - :a: str_i
-    :b: s-i
-    :c: t_i
-    :d: to_i
-- :correct: d
-:q2:
-- :question: What method will convert a number to a string?
-- :answers:
-  - :a: to_s
-    :b: to_str
-    :c: to_string
-    :d: to-s
-- :correct: a
-
+    :question: What method will convert a string to an integer?
+    :answers:
+        :a: str_i
+        :b: s-i
+        :c: t_i
+        :d: to_i
+    :correct: d
+:q5:
+    :question: What method will convert a number to a string?
+    :answers:
+        :a: to_s
+        :b: to_str
+        :c: to_string
+        :d: to-s
+    :correct: a

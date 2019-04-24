@@ -1,40 +1,40 @@
 :q1:
-- :question: You need to send a value back to the code that called it (return a value to the caller). Which method can/should be used for this?
-- :answers:
-  - :a: return
-    :b: post
-    :c: send
-    :d: relay
-- :correct: a
+    :question: You need to send a value back to the code that called it (return a value to the caller). Which method can/should be used for this?
+    :answers:
+        :a: return
+        :b: post
+        :c: send
+        :d: relay
+    :correct: a
 :q2:
-- :question: Which method to remove trailing new line character?
-- :answers:
-  - :a: truncate
-    :b: prune
-    :c: shave
-    :d: chomp
-- :correct: d
+    :question: Which method to remove trailing new line character?
+    :answers:
+        :a: truncate
+        :b: prune
+        :c: shave
+        :d: chomp
+     :correct: d
 :q3:
-- :question: which method can return a string to uppercase?
-- :answers:
-  - :a: uppercase
-    :b: ucase
-    :c: upcase
-    :d: u_c
-- :correct: a
+    :question: which method can return a string to uppercase?
+    :answers:
+        :a: uppercase
+        :b: ucase
+        :c: upcase
+        :d: u_c
+    :correct: a
 :q4:
-- :question: Which of the following methods can be used in Ruby to get a random number?
-- :answers:
-  - :a: math.GetRandomNumber
-    :b: $random
-    :c: rand
-    :d: rnd
-- :correct: c
+    :question: Which of the following methods can be used in Ruby to get a random number?
+    :answers:
+        :a: math.GetRandomNumber
+        :b: $random
+        :c: rand
+        :d: rnd
+    :correct: c
 :q5:
-- :question: Variables that start with two '@' symbols are what kind of variables in Ruby
-- :answers:
-  - :a: Local variable
-    :b: Class variable
-    :c: Instance variable
-    :d: none of the above
-- :correct: b
+    :question: Variables that start with two '@' symbols are what kind of variables in Ruby
+    :answers:
+        :a: Local variable
+        :b: Class variable
+        :c: Instance variable
+        :d: none of the above
+    :correct: b

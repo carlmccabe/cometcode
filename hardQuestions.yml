@@ -1,40 +1,40 @@
 :q1:
-- :question: How to open a file in read-only mode?
-- :answers:
-  - :a: Read (“employees.txt”)
-    :b: Read.file “employees.txt”
-    :c: File.read (“employees.txt”, open)
-    :d: File.open (“employees.txt”, “r”)
-- :correct: d
+    :question: How to open a file in read-only mode?
+    :answers:
+        :a: Read (“employees.txt”)
+        :b: Read.file “employees.txt”
+        :c: File.read (“employees.txt”, open)
+        :d: File.open (“employees.txt”, “r”)
+    :correct: d
 :q2: 
-- :question: Your program needs to see if a file named water.txt currently exists in the present working directory. Which of the following should be used to accomplish this?
-- :answers:
-  - :a: File.exists?("water.txt")
-    :b: File.e (“water.txt”)
-    :c: IfFile.“water.txt"
-    :d: [ “water.txt” ! ]
-- :correct: a
+    :question: Your program needs to see if a file named water.txt currently exists in the present working directory. Which of the following should be used to accomplish this?
+    :answers:
+        :a: File.exists?("water.txt")
+        :b: File.e (“water.txt”)
+        :c: IfFile.“water.txt"
+        :d: [ “water.txt” ! ]
+    :correct: a
 :q3:
-- :question: Which of the following is supported by Ruby?
-- :answers:
-  - :a: Multiple Programming Paradigms
-    :b: Dynamic Type System
-    :c: Automatic Memory Management
-    :d: All of the above
-- :correct: d
+    :question: Which of the following is supported by Ruby?
+    :answers:
+        :a: Multiple Programming Paradigms
+        :b: Dynamic Type System
+        :c: Automatic Memory Management
+        :d: All of the above
+    :correct: d
 :q4:
-- :question: What does %x!ls! represents?
-- :answers:
-  - :a: Same as back tick command output 'ls'
-    :b: same as 'x'
-    :c: same as "xls"
-    :d: none of the metioned
-- :correct: a
+    :question: What does %x!ls! represents?
+    :answers:
+        :a: Same as back tick command output 'ls'
+        :b: same as 'x'
+        :c: same as "xls"
+        :d: none of the metioned
+    :correct: a
 :q5:
-- :question: Ruby is what kind of programming language?
-- :answers:
-  - :a: Strongly typed/Statically typed
-    :b: Strongly typed/Dynamically typed
-    :c: Weakly typed/Statically typed
-    :d: Weakly typed/Dynamically typed
-- :correct: b
+    :question: Ruby is what kind of programming language?
+    :answers:
+        :a: Strongly typed/Statically typed
+        :b: Strongly typed/Dynamically typed
+        :c: Weakly typed/Statically typed
+        :d: Weakly typed/Dynamically typed
+    :correct: b

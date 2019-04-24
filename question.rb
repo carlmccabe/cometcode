@@ -46,16 +46,33 @@ puts question.correct_answer
 # Expected: returns "b) class"
 question.print_correct_answer
 
-def run_test(questions)
-    user_answer = ""
-    score = 0
-    for question in questions
-        puts question.question
-        user_answer = gets.chomp
-        if answer == question.answer
-            score += 1 #incrament a store variable
-        end
-    end
-end
+# class Question
+#     attr_accessor :question :answer
+#     @question = question
+#     @answer_choices = answer_choices
+#     @answer = answer
+#     end
+# end
 
-puts (\"You got #{score} "/" #{question.length}\)
+# q1 = what method starts a class?\na)"end"\nb)"Class"
+# q2 = what method ends a class?\a)"end"\nb)"Class"
+
+# question = [
+#     question.new(q1, "b",
+#     question.new(q2, "a")
+# ]
+
+# def run_test(questions)
+#     user_answer = ""
+#     score = 0
+#     for question in questions
+#         puts question.question
+#         user_answer = gets.chomp
+#         if answer == question.answer
+#             score += 1 #incrament a store variable
+#         end
+#     end
+# end
+
+# puts (\"You got #{score} "/" #{question.length}\)
+
