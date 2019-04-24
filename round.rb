@@ -1,26 +1,43 @@
 require 'yaml'
+require './question'
+require 'io/console'
 
 class Round
 attr_reader :questions_set
     def initialize(questions_set)
         @questions_set = questions_set
+        score = 0
     end
     def print_all
         puts questions_set
     end
     
     def round_loop
+        score = 0
         questions_set.each { | key , value|
         puts key.capitalize
-        puts value[:question]
-        puts "a) #{value[:answers][:a]}"
-        puts "b) #{value[:answers][:b]}"
-        puts "c) #{value[:answers][:c]}"
-        puts "d) #{value[:answers][:d]}"
+        question = Question.new(
+            value[:question], 
+            value[:answers],
+            value[:correct]
+            )
+        question.ask_question
+        question.print_answer_choices
         puts "Select a letter and press enter"
-        user_input = gets.chomp
+        user_input = STDIN.getch.downcase
+        guess = "#{value[:correct]}"
+        
+        if user_input == guess 
+            puts "Correct"
+            score += 1
+        else
+            puts "Wrong"
+
+        end
         }
+        puts "You got #{score} out of #{questions_set.length}"
     end
+
 end
 
 #tests
@@ -31,13 +48,13 @@ test = YAML.load_file('./easyQuestions.yml')
 #Expected: no error
 
 round = Round.new(test)
-#can print entire questions set 
-#Expected: print question array
+# Can print entire questions set 
+# Expected: print question array
 # round.print_all
-#can display one question at a time from the array
-#Expected: "What is the keyword to start a class"
-round.round_loop
-#can display multiple choice answers under question
+# Can display one question at a time from the array
+# Expected: "What is the keyword to start a class"
+# round.round_loop
+# Can display multiple choice answers under question
 # #Expected: 
 # Q5
 # What method will convert a number to a string?
@@ -46,3 +63,18 @@ round.round_loop
 # c) to_string
 # d) to-s
 # Select a letter and press enter
+# Determine if the answer is right or wrong
+# Expected:
+# Who designed and developed Ruby?
+# a) Kyoto Osaka
+# b) Nara Hakone
+# c) Yukihiro Matsumoto
+# d) Ajinomoto
+# Select a letter and press enter
+# c
+# Correct = Passed
+
+# 
+
+
+
