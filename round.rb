@@ -38,12 +38,12 @@ attr_reader :questions_set
                 else
                     colorString(">>Wrong<<", "red")
                 end
-                sleep(1)
+                sleep(.8)
                 break
             else
                 puts "Try again, must be a, b, c, or d."
                 sleep(1.5)
-                clear # to clear terminal
+                clear 
             end
         end
         }

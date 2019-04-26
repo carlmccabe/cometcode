@@ -94,4 +94,4 @@ round = Round.new(questions)
 round.round_loop
 #clear and close less abrubtly
 clear
-sleep(1)
+puts ""
