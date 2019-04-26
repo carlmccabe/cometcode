@@ -1,5 +1,6 @@
+# Allows Question to be printed in identical format when needed
 class Question
-    attr_reader :correct_answer, :question
+   attr_reader :correct_answer, :question
     def initialize(question, answer_choices, answer)
     @correct_answer = answer
     @question = question
@@ -7,17 +8,24 @@ class Question
     end
 
     def ask_question
-        puts "======================================"
-        puts question
+        colorString(question, "blue")
     end
     def print_answer_choices
         puts "\n"
         # puts @answer_choices
+<<<<<<< HEAD
         puts ColorizedString["a) #{@answer_choices[:a]}"].colorize(:color => :light_blue)
         puts ColorizedString["b) #{@answer_choices[:b]}"].colorize(:color => :light_blue)
         puts ColorizedString["c) #{@answer_choices[:c]}"].colorize(:color => :light_blue)
         puts ColorizedString["d) #{@answer_choices[:d]}"].colorize(:color => :light_blue)
         puts "\n"
+=======
+        colorString("a) #{@answer_choices[:a]}", "light_blue")
+        colorString("b) #{@answer_choices[:b]}", "light_blue")
+        colorString("c) #{@answer_choices[:c]}", "light_blue")
+        colorString("d) #{@answer_choices[:d]}", "light_blue")
+        puts
+>>>>>>> carl
     end
 
 
@@ -27,7 +35,8 @@ class Question
 end
 
 # tests
-# Can create a new question
+
+# Can create a new question class
 # Expected: No error = passed
 # question = Question.new(
 #     "What is the keyword to start a class?", #question

@@ -1,6 +1,9 @@
 require 'yaml'
 require './question'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> carl
 require 'io/console'
 require 'colorized_string'
 
@@ -17,12 +20,13 @@ attr_reader :questions_set
     def round_loop
         score = 0
         questions_set.each { | key , value|
-        puts key.capitalize
+        clear
         question = Question.new(
             value[:question], 
             value[:answers],
             value[:correct]
             )
+<<<<<<< HEAD
         question.ask_question
         question.print_answer_choices
         user_input = STDIN.getch.downcase
@@ -47,12 +51,47 @@ end
         end
         }
         puts ColorizedString["You got #{score} out of #{questions_set.length}"].colorize(:color => :yellow)
+=======
+        loop do
+            puts key.capitalize
+            question.ask_question
+            question.print_answer_choices
+            colorString("Select a letter and press enter", "blue")
+            user_input = STDIN.getch.downcase
+# checks if user_input is = a, b, c, or d
+            if ['a','b','c','d'].include?(user_input)
+                answer = "#{value[:correct]}"
+                puts "You entered >> #{user_input}...."
+                sleep(1)
+                if user_input == answer 
+                    colorString(">>Correct!<<", "green")
+                    score += 1
+                else
+                    colorString(">>Wrong<<", "red")
+                end
+                sleep(.8)
+                break
+            else
+                puts "Try again, must be a, b, c, or d."
+                sleep(1.5)
+                clear 
+            end
+        end
+        }
+puts
+        colorString("You got #{score} out of #{questions_set.length}, Thanks for Playing!", "yellow")
+        sleep(2)
+
+>>>>>>> carl
     end
         
 end
 
 #tests
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> carl
 #Can load from file
 #Expected: No Errors
 test = YAML.load_file('./easyQuestions.yml')
@@ -90,6 +129,7 @@ test = YAML.load_file('./easyQuestions.yml')
 
 
 
+<<<<<<< HEAD
 =======
 #Can create a new round of 5 questions from file
 #Init Round
@@ -119,3 +159,5 @@ puts easy[:q1[:question]]
 #     )
 # puts question.ask_question
 >>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237
+=======
+>>>>>>> carl

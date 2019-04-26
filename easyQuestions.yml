@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> carl
 :q1:
     :question: What is the keyword to start a class?
     :answers:
@@ -38,6 +41,7 @@
         :b: to_str
         :c: to_string
         :d: to-s
+<<<<<<< HEAD
     :correct: a
 =======
 ---
@@ -57,3 +61,6 @@
   :d: begin
 - c
 >>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237
+=======
+    :correct: a
+>>>>>>> carl
