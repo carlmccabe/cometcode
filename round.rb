@@ -1,11 +1,6 @@
 require 'yaml'
 require './question'
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> carl
 require 'io/console'
-require 'colorized_string'
 
 class Round
 attr_reader :questions_set
@@ -26,32 +21,6 @@ attr_reader :questions_set
             value[:answers],
             value[:correct]
             )
-<<<<<<< HEAD
-        question.ask_question
-        question.print_answer_choices
-        user_input = STDIN.getch.downcase
-        puts ColorizedString["You entered >> #{user_input}"].colorize(:color => :blue)
-        guess = "#{value[:correct]}"
-=======
-
-easy = YAML.load(File.read("easyQuestions.yml"))
-class Round
-    def initialize
-
-    end
-end
->>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237
-
-        if user_input == guess 
-            puts ColorizedString["Correct"].colorize(:color => :green)
-            score += 1
-            
-        else
-            puts ColorizedString["Wrong"].colorize(:color => :red)
-        end
-        }
-        puts ColorizedString["You got #{score} out of #{questions_set.length}"].colorize(:color => :yellow)
-=======
         loop do
             puts key.capitalize
             question.ask_question
@@ -69,12 +38,12 @@ end
                 else
                     colorString(">>Wrong<<", "red")
                 end
-                sleep(.8)
+                sleep(1)
                 break
             else
                 puts "Try again, must be a, b, c, or d."
                 sleep(1.5)
-                clear 
+                clear # to clear terminal
             end
         end
         }
@@ -82,23 +51,18 @@ puts
         colorString("You got #{score} out of #{questions_set.length}, Thanks for Playing!", "yellow")
         sleep(2)
 
->>>>>>> carl
     end
-        
+
 end
 
 #tests
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> carl
 #Can load from file
 #Expected: No Errors
 test = YAML.load_file('./easyQuestions.yml')
 #Can create a new round Class
 #Expected: no error
 
-# round = Round.new(test)
+round = Round.new(test)
 # Can print entire questions set 
 # Expected: print question array
 # round.print_all
@@ -129,35 +93,3 @@ test = YAML.load_file('./easyQuestions.yml')
 
 
 
-<<<<<<< HEAD
-=======
-#Can create a new round of 5 questions from file
-#Init Round
-#Expected: no error
-round = Round.new
-#Can load from file and print to console
-#Expected: {:Q1=>["What is the keyword to start a class?",
-# {:a=>"end", :b=>"class", :c=>"def", :d=>"begin"}, "b"], 
-#:Q2=>["What is the keyword to start a method?", 
-#{:a=>"end", :b=>"class", :c=>"def", :d=>"begin"}, "c"]}
-puts "Loaded easyQuestions.yml"
-puts "========================="
-puts easy
-puts "========================="
-puts "Is it a hash?"
-puts easy.is_a?(Hash)
-puts "========================="
-puts easy[:q1[:question]]
-
-# question = Question.new(questionOne)
-
-
-#  question = Question.new(
-#     "What is the keyword to start a class?", #question
-#     {a: "end", b: "class", c: "def", d: "begin"}, #answer choices
-#     "b" #correct answer
-#     )
-# puts question.ask_question
->>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237
-=======
->>>>>>> carl

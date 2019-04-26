@@ -5,13 +5,8 @@
 
 # Comet Code
 Project documentation is to be compiled as a single markdown file namedREADME.md This file should contain,
-<<<<<<< HEAD
-- Link to GitHub repository
-    - https://github.com/raeginez/cometcode
-=======
 - A link to your GitHub repository
     - https://github.com/raeginez?tab=repositories
->>>>>>> carl
 - Ensure the repository is accessible by your Educators
 - Description of the app, including,
     - Purpose
