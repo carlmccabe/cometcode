@@ -4,24 +4,21 @@
 
 
 # Comet Code
-Project documentation is to be compiled as a single markdown file namedREADME.md This file should contain,
-- A link to your GitHub repository
-    - https://github.com/raeginez?tab=repositories
-- Ensure the repository is accessible by your Educators
-- Description of the app, including,
-    - Purpose
-        - Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
-    - Functionality
+https://github.com/carlmccabe/cometcode
+
+- Purpose
+    - Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
+- Functionality
         - Multiple choice question that are "collected" into a scale according to how well you know/understand them
     - Instructions for use
-        1- run app
-        2- enter username 
-        3- pick a level of difficulty 
-        4- read the questions carefully
-        5- select the letter of your answer
-        7- if it's right it will increase score
-        8- if its wrong it will decrease score
-        9- the results will be diplayed at the end of the game 
+        -1- run app
+        -2- enter username 
+        -3- pick a level of difficulty 
+        -4- read the questions carefully
+        -5- select the letter of your answer
+        -7- if it's right it will increase score
+        -8- if its wrong it will decrease score
+        -9- the results will be diplayed at the end of the game 
     - Screenshots
     ![app](docs/CometCode.png)
     ![app](docs/screenshot1.png)
