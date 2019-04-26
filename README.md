@@ -43,24 +43,25 @@ https://github.com/carlmccabe/cometcode
 ![app](docs/screenshot5.png)
 ## Basic flow chart
     ![app](docs/flowchart.png)
-    - Future enhancements 
-        - saving user progress
-            The data structure was initially designed to manipulate the question set this allows to present the user with more detailed stats. It would require more development time to create an array for the user and save to file, then have the user be able to reload
-        - more/harder Questions
-            A great deal of time could be put into crafting questions, which was unnecessary for the mvp,  another app could be created to input questions into a save file that could then be loaded from the main menu
-        - more levels
-            see above
-        - timer
-            to create a slightly more stressful environment sometimes allow for better learning conditions
-    - Accessibility concerns
-        - vision impairment 
-            Colors were chosen for looks but it could be adjust for various eye conditions( aka colorblindness)
-        - navigation
-            Options were limited to avoid getting lost or hitting the wrong key
-    - Potential legal, moral, ethical, cultural and safety issues
-        - None that bears any trouble perhaps thought should be put into the wording of certain questions
-    - Possible social, political, cultural, racial, gender andinternational issues
-        - none
+
+- Future enhancements 
+    - saving user progress
+        The data structure was initially designed to manipulate the question set this allows to present the user with more detailed stats. It would require more development time to create an array for the user and save to file, then have the user be able to reload
+    - more/harder Questions
+        A great deal of time could be put into crafting questions, which was unnecessary for the mvp,  another app could be created to input questions into a save file that could then be loaded from the main menu
+    - more levels
+        see above
+    - timer
+        to create a slightly more stressful environment sometimes allow for better learning conditions
+- Accessibility concerns
+    - vision impairment 
+        Colors were chosen for looks but it could be adjust for various eye conditions( aka colorblindness)
+    - navigation
+        Options were limited to avoid getting lost or hitting the wrong key
+- Potential legal, moral, ethical, cultural and safety issues
+    - None that bears any trouble perhaps thought should be put into the wording of certain questions
+- Possible social, political, cultural, racial, gender andinternational issues
+    - Language options
 - Details of design & planning process including,
     - Evidence of app idea brainstorming sessions
     ![app](docs/Brainstorming.png)
