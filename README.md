@@ -10,15 +10,21 @@ https://github.com/carlmccabe/cometcode
     - Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
 - Functionality
         - Multiple choice question that are "collected" into a scale according to how well you know/understand them
-- Instructions for use
     - 1 run app
     - 2 enter username 
     - 3 pick a level of difficulty 
     - 4 read the questions carefully
     - 5 select the letter of your answer
-    - 7 if it's right it will increase score
-    - 8 if its wrong it will decrease score
-    - 9 the results will be diplayed at the end of the game 
+    - future plans
+        - 7 if it's right it will increase score
+        - 8 if its wrong it will decrease score
+    - 9 the results will be diplayed at the end of the round 
+- Instructions for use
+```
+ git clone git@github.com:carlmccabe/cometcode.git 
+ cd cometcode/
+ ruby main.rb
+ ```
 - Screenshots
     - early days
 ![app](docs/CometCode.png)
