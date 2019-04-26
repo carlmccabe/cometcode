@@ -20,18 +20,18 @@ https://github.com/carlmccabe/cometcode
         - 8 if its wrong it will decrease score
     - 9 the results will be diplayed at the end of the round 
 - Instructions for use
- - SSH
-```
-git clone git@github.com:carlmccabe/cometcode.git
-cd cometcode/
-ruby main.rb
-```
- - HTTPS
-```
-git clone https://github.com/carlmccabe/cometcode.git
-cd cometcode/
-ruby main.rb
-```
+    - SSH
+    ```
+    git clone git@github.com:carlmccabe/cometcode.git
+    cd cometcode/
+    ruby main.rb
+    ```
+    - HTTPS
+    ```
+    git clone https://github.com/carlmccabe/cometcode.git
+    cd cometcode/
+    ruby main.rb
+    ```
 - Screenshots
     - early days
 ![app](docs/CometCode.png)
