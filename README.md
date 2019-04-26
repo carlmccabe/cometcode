@@ -13,7 +13,7 @@ Project documentation is to be compiled as a single markdown file namedREADME.md
     - Functionality
         Multiple choice question that are "collected" into a scale according to how well you know/understand them
     - Instructions for use
-        Enter name => pick a level (easy, medium, hard) => round of questions 1-5 => multiple choice question => level up (Bronze, Silver, Gold, Legendary, Super Saiyan) display results (right answers/wrong answers) => Play again?/Exit
+        Enter name => pick a level (easy, medium, hard) => round of questions 1-5 => multiple choice question => Display results   (further dev)=> level up (Bronze, Silver, Gold, Legendary, Super Saiyan) display results (right answers/wrong answers) => Play again?/Exit
     - Screenshots
         todo
     - Future enhancements
