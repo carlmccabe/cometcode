@@ -42,7 +42,7 @@ https://github.com/carlmccabe/cometcode
 ## Making it pretty (Added colorize gem)
 ![app](docs/screenshot5.png)
 ## Basic flow chart
-    ![app](docs/flowchart.png)
+![app](docs/flowchart.png)
 
 - Future enhancements 
     - saving user progress
