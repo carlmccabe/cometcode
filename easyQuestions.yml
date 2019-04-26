@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :q1:
     :question: What is the keyword to start a class?
     :answers:
@@ -38,3 +39,21 @@
         :c: to_string
         :d: to-s
     :correct: a
+=======
+---
+:q1:
+- :question: What is the keyword to start a class?
+- :answers:
+  - :a: end
+    :b: class
+    :c: def
+    :d: begin
+- :correct: b
+:q2:
+- What is the keyword to start a method?
+- :a: end
+  :b: class
+  :c: def
+  :d: begin
+- c
+>>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237

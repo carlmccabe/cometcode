@@ -1,5 +1,6 @@
 require 'yaml'
 require './question'
+<<<<<<< HEAD
 require 'io/console'
 require 'colorized_string'
 
@@ -27,6 +28,15 @@ attr_reader :questions_set
         user_input = STDIN.getch.downcase
         puts ColorizedString["You entered >> #{user_input}"].colorize(:color => :blue)
         guess = "#{value[:correct]}"
+=======
+
+easy = YAML.load(File.read("easyQuestions.yml"))
+class Round
+    def initialize
+
+    end
+end
+>>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237
 
         if user_input == guess 
             puts ColorizedString["Correct"].colorize(:color => :green)
@@ -42,6 +52,7 @@ attr_reader :questions_set
 end
 
 #tests
+<<<<<<< HEAD
 #Can load from file
 #Expected: No Errors
 test = YAML.load_file('./easyQuestions.yml')
@@ -79,3 +90,32 @@ test = YAML.load_file('./easyQuestions.yml')
 
 
 
+=======
+#Can create a new round of 5 questions from file
+#Init Round
+#Expected: no error
+round = Round.new
+#Can load from file and print to console
+#Expected: {:Q1=>["What is the keyword to start a class?",
+# {:a=>"end", :b=>"class", :c=>"def", :d=>"begin"}, "b"], 
+#:Q2=>["What is the keyword to start a method?", 
+#{:a=>"end", :b=>"class", :c=>"def", :d=>"begin"}, "c"]}
+puts "Loaded easyQuestions.yml"
+puts "========================="
+puts easy
+puts "========================="
+puts "Is it a hash?"
+puts easy.is_a?(Hash)
+puts "========================="
+puts easy[:q1[:question]]
+
+# question = Question.new(questionOne)
+
+
+#  question = Question.new(
+#     "What is the keyword to start a class?", #question
+#     {a: "end", b: "class", c: "def", d: "begin"}, #answer choices
+#     "b" #correct answer
+#     )
+# puts question.ask_question
+>>>>>>> 5fc43e64b7b202673ce1f7aeaafec1b3bce18237
