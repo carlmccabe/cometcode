@@ -1,6 +1,8 @@
 require 'yaml'
 require './round'
+require './question'
 require 'io/console'
+require 'colorized_string'
 
 #Main methods
 
