@@ -10,33 +10,42 @@ https://github.com/carlmccabe/cometcode
     - Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
 - Functionality
         - Multiple choice question that are "collected" into a scale according to how well you know/understand them
-    - Instructions for use
-        -1- run app
-        -2- enter username 
-        -3- pick a level of difficulty 
-        -4- read the questions carefully
-        -5- select the letter of your answer
-        -7- if it's right it will increase score
-        -8- if its wrong it will decrease score
-        -9- the results will be diplayed at the end of the game 
-    - Screenshots
-    ![app](docs/CometCode.png)
-    ![app](docs/screenshot1.png)
-    ![app](docs/screenshot2.png)
-    ![app](docs/screenshot3.png)
-    ![app](docs/screenshot4.png) 
-    ![app](docs/screenshot5.png)
+- Instructions for use
+    - 1 run app
+    - 2 enter username 
+    - 3 pick a level of difficulty 
+    - 4 read the questions carefully
+    - 5 select the letter of your answer
+    - 7 if it's right it will increase score
+    - 8 if its wrong it will decrease score
+    - 9 the results will be diplayed at the end of the game 
+- Screenshots
+    - early days
+![app](docs/CometCode.png)
+    - Brainstorming on the Trello board
+![app](docs/screenshot1.png)
+    - Ticking things off the list!
+![app](docs/screenshot4.png) 
+    - Making it pretty (Added colorize gem)
+![app](docs/screenshot5.png)
+    - Basic flow chart
     ![app](docs/flowchart.png)
     - Future enhancements 
-        - saving progress
+        - saving user progress
+            The data structure was initially designed to manipulate the question set this allows to present the user with more detailed stats. It would require more development time to create an array for the user and save to file, then have the user be able to reload
         - more/harder Questions
+            A great deal of time could be put into crafting questions, which was unnecessary for the mvp,  another app could be created to input questions into a save file that could then be loaded from the main menu
         - more levels
+            see above
         - timer
+            to create a slightly more stressful environment sometimes allow for better learning conditions
     - Accessibility concerns
         - vision impairment 
+            Colors were chosen for looks but it could be adjust for various eye conditions( aka colorblindness)
         - navigation
+            Options were limited to avoid getting lost or hitting the wrong key
     - Potential legal, moral, ethical, cultural and safety issues
-        - none
+        - None that bears any trouble perhaps thought should be put into the wording of certain questions
     - Possible social, political, cultural, racial, gender andinternational issues
         - none
 - Details of design & planning process including,
