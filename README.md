@@ -33,15 +33,15 @@ https://github.com/carlmccabe/cometcode
     ruby main.rb
     ```
 - Screenshots
-    - early days
+## Early days
 ![app](docs/CometCode.png)
-    - Brainstorming on the Trello board
+## Brainstorming on the Trello board
 ![app](docs/screenshot1.png)
-    - Ticking things off the list!
+## Ticking things off the list!
 ![app](docs/screenshot4.png) 
-    - Making it pretty (Added colorize gem)
+## Making it pretty (Added colorize gem)
 ![app](docs/screenshot5.png)
-    - Basic flow chart
+## Basic flow chart
     ![app](docs/flowchart.png)
     - Future enhancements 
         - saving user progress
