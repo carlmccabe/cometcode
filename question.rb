@@ -1,5 +1,5 @@
 class Question
-    attr_reader :correct_answer, :question
+   attr_reader  :question
     def initialize(question, answer_choices, answer)
     @correct_answer = answer
     @question = question
@@ -26,7 +26,8 @@ class Question
 end
 
 # tests
-# Can create a new question
+
+# Can create a new question class
 # Expected: No error = passed
 # question = Question.new(
 #     "What is the keyword to start a class?", #question
