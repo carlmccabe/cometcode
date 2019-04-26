@@ -1,5 +1,5 @@
 class Question
-   attr_reader  :question
+   attr_reader :correct_answer, :question
     def initialize(question, answer_choices, answer)
     @correct_answer = answer
     @question = question
@@ -12,11 +12,11 @@ class Question
     def print_answer_choices
         puts "\n"
         # puts @answer_choices
-        puts "a) #{@answer_choices[:a]}"
-        puts "b) #{@answer_choices[:b]}"
-        puts "c) #{@answer_choices[:c]}"
-        puts "d) #{@answer_choices[:d]}"
-        puts "\n"
+        colorString("a) #{@answer_choices[:a]}", "light_blue")
+        colorString("b) #{@answer_choices[:b]}", "light_blue")
+        colorString("c) #{@answer_choices[:c]}", "light_blue")
+        colorString("d) #{@answer_choices[:d]}", "light_blue")
+        puts
     end
 
 

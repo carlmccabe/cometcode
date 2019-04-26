@@ -15,8 +15,7 @@ attr_reader :questions_set
     def round_loop
         score = 0
         questions_set.each { | key , value|
-        print "\e[2J\e[f" # to clear terminal
-
+        clear
         question = Question.new(
             value[:question], 
             value[:answers],
@@ -26,29 +25,29 @@ attr_reader :questions_set
             puts key.capitalize
             question.ask_question
             question.print_answer_choices
-            puts "Select a letter and press enter"
+            colorString("Select a letter and press enter", "blue")
             user_input = STDIN.getch.downcase
 # checks if user_input is = a, b, c, or d
             if ['a','b','c','d'].include?(user_input)
                 answer = "#{value[:correct]}"
-                puts "You selected ..  #{user_input}  .."
+                puts "You entered >> #{user_input}  .."
                 if user_input == answer 
-                    puts ">>Correct!<<"
+                    colorString(">>Correct!<<", "green")
                     score += 1
                 else
-                    puts ">>Wrong<<"
+                    colorString(">>Wrong<<", "red")
                 end
-                sleep(1.5)
+                sleep(1)
                 break
             else
                 puts "Try again, must be a, b, c, or d."
-                sleep(1)
-                print "\e[2J\e[f" # to clear terminal
+                sleep(1.5)
+                clear # to clear terminal
             end
         end
         }
 
-        puts "You got #{score} out of #{questions_set.length}"
+        colorString("You got #{score} out of #{questions_set.length}", "yellow")
     end
 
 end
