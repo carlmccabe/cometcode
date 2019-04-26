@@ -30,7 +30,8 @@ attr_reader :questions_set
 # checks if user_input is = a, b, c, or d
             if ['a','b','c','d'].include?(user_input)
                 answer = "#{value[:correct]}"
-                puts "You entered >> #{user_input}  .."
+                puts "You entered >> #{user_input}...."
+                sleep(1)
                 if user_input == answer 
                     colorString(">>Correct!<<", "green")
                     score += 1
@@ -46,8 +47,10 @@ attr_reader :questions_set
             end
         end
         }
+puts
+        colorString("You got #{score} out of #{questions_set.length}, Thanks for Playing!", "yellow")
+        sleep(2)
 
-        colorString("You got #{score} out of #{questions_set.length}", "yellow")
     end
 
 end

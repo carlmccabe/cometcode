@@ -1,3 +1,4 @@
+# Allows Question to be printed in identical format when needed
 class Question
    attr_reader :correct_answer, :question
     def initialize(question, answer_choices, answer)
@@ -7,7 +8,7 @@ class Question
     end
 
     def ask_question
-        puts question
+        colorString(question, "blue")
     end
     def print_answer_choices
         puts "\n"
