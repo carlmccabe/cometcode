@@ -4,48 +4,69 @@
 
 
 # Comet Code
-Project documentation is to be compiled as a single markdown file namedREADME.mdThis file should contain,
+Project documentation is to be compiled as a single markdown file namedREADME.md This file should contain,
 - A link to your GitHub repository
+    - https://github.com/raeginez?tab=repositories
 - Ensure the repository is accessible by your Educators
 - Description of the app, including,
     - Purpose
-        Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
+        - Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
     - Functionality
-        Multiple choice question that are "collected" into a scale according to how well you know/understand them
+        - Multiple choice question that are "collected" into a scale according to how well you know/understand them
     - Instructions for use
-        Enter name => pick a level (easy, medium, hard) => round of questions 1-5 => multiple choice question => level up (Bronze, Silver, Gold, Legendary, Super Saiyan) display results (right answers/wrong answers) => Play again?/Exit
+        1- run app
+        2- enter username 
+        3- pick a level of difficulty 
+        4- read the questions carefully
+        5- select the letter of your answer
+        7- if it's right it will increase score
+        8- if its wrong it will decrease score
+        9- the results will be diplayed at the end of the game 
     - Screenshots
-        todo
-    - Future enhancements
-        saving progress
-        more/harder Questions
-        more levels
-        timer
+    ![app](docs/CometCode.png)
+    ![app](docs/screenshot1.png)
+    ![app](docs/screenshot2.png)
+    ![app](docs/screenshot3.png)
+    ![app](docs/screenshot4.png) 
+    ![app](docs/screenshot5.png)
+    ![app](docs/flowchart.png)
+    - Future enhancements 
+        - saving progress
+        - more/harder Questions
+        - more levels
+        - timer
     - Accessibility concerns
-        vision impairment 
-        navigation
+        - vision impairment 
+        - navigation
     - Potential legal, moral, ethical, cultural and safety issues
-        none
+        - none
     - Possible social, political, cultural, racial, gender andinternational issues
-        none
+        - none
 - Details of design & planning process including,
     - Evidence of app idea brainstorming sessions
+    ![app](docs/Brainstorming.png)
+    ![app](docs/comment1.png)
+    ![app](docs/comment2.png)
     - User stories
+        - US - As a user I can function
+        - US - As a user I can enter my username
+        - US - As a user I can choose easy, medium or hard
+        - US - As a user I can answer multiple question
+        - US - As a user I can see if my answer is right or wrong
+        - US - As a user I can see the results at the end of the game
     - Project plan & timeline
+    ![app](docs/project plan.png)
     - Description of overall app design (classes, files, basic flow)
+    
+
     - Design considerations and choices
+    ![app](docs/CometCode.png)
+    ![app](docs/screenshot5.png)
+    ![app](docs/ColorizeString1.png)
+    ![app](docs/ColorizeString2.png)
     - Screenshots of Trello board(s)
-
-
-    Pseudo Code
-    1- run app
-    2- enter their username 
-    3- pick a level of difficulty 
-    4- based on level of difficulty load the questions in 
-    5- for each question ask the user 
-    6- detect if answer is correct or incorrect
-    7- if its right level up 
-    8- if its wrong 
-    9- display the results at the end of the game 
-    10- option to play again or exit 
+    ![app](docs/screenshot1.png)
+    ![app](docs/screenshot2.png)
+    ![app](docs/screenshot3.png)
+    ![app](docs/screenshot4.png) 
 

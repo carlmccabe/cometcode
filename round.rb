@@ -1,6 +1,7 @@
 require 'yaml'
 require './question'
 require 'io/console'
+require 'colorized_string'
 
 class Round
 attr_reader :questions_set
@@ -23,21 +24,21 @@ attr_reader :questions_set
             )
         question.ask_question
         question.print_answer_choices
-        puts "Select a letter and press enter"
         user_input = STDIN.getch.downcase
+        puts ColorizedString["You entered >> #{user_input}"].colorize(:color => :blue)
         guess = "#{value[:correct]}"
-        
-        if user_input == guess 
-            puts "Correct"
-            score += 1
-        else
-            puts "Wrong"
 
+        if user_input == guess 
+            puts ColorizedString["Correct"].colorize(:color => :green)
+            score += 1
+            
+        else
+            puts ColorizedString["Wrong"].colorize(:color => :red)
         end
         }
-        puts "You got #{score} out of #{questions_set.length}"
+        puts ColorizedString["You got #{score} out of #{questions_set.length}"].colorize(:color => :yellow)
     end
-
+        
 end
 
 #tests
@@ -47,7 +48,7 @@ test = YAML.load_file('./easyQuestions.yml')
 #Can create a new round Class
 #Expected: no error
 
-round = Round.new(test)
+# round = Round.new(test)
 # Can print entire questions set 
 # Expected: print question array
 # round.print_all

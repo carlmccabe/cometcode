@@ -13,7 +13,7 @@
         :b: prune
         :c: shave
         :d: chomp
-     :correct: d
+    :correct: d
 :q3:
     :question: which method can return a string to uppercase?
     :answers:
