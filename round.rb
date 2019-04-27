@@ -58,11 +58,11 @@ end
 #tests
 #Can load from file
 #Expected: No Errors
-test = YAML.load_file('./easyQuestions.yml')
+#test = YAML.load_file('./easyQuestions.yml')
 #Can create a new round Class
 #Expected: no error
 
-round = Round.new(test)
+#round = Round.new(test)
 # Can print entire questions set 
 # Expected: print question array
 # round.print_all

@@ -1,4 +1,4 @@
-:q1:
+etq1:
     :question: You need to send a value back to the code that called it (return a value to the caller). Which method can/should be used for this?
     :answers:
         :a: return
@@ -13,7 +13,7 @@
         :b: prune
         :c: shave
         :d: chomp
-     :correct: d
+    :correct: d
 :q3:
     :question: which method can return a string to uppercase?
     :answers:
