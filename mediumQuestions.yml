@@ -1,4 +1,4 @@
-etq1:
+:q1:
     :question: You need to send a value back to the code that called it (return a value to the caller). Which method can/should be used for this?
     :answers:
         :a: return

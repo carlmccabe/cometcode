@@ -86,8 +86,6 @@ when 3
 end
 
 puts "\n" #creates a blank line
-puts "You selected:"
-#puts questions #test for corect load of yaml file
 sleep(2)
 
 # Creates new round with selected level(see round.rb)
