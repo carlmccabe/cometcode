@@ -23,12 +23,15 @@ https://github.com/carlmccabe/cometcode
     - SSH
     ```
     git clone git@github.com:carlmccabe/cometcode.git
-    cd cometcode/
-    ruby main.rb
     ```
+    
     - HTTPS
     ```
     git clone https://github.com/carlmccabe/cometcode.git
+    ```
+    - To run
+    ```
+    gem install colorize
     cd cometcode/
     ruby main.rb
     ```
