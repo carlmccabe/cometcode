@@ -7,7 +7,7 @@
 https://github.com/carlmccabe/cometcode
 
 - Purpose
-    - Test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
+    - A simple Quiz to test your skills as a ruby developer, by fielding questions and committing syntax and code concepts to memory
 - Functionality
         - Multiple choice question that are "collected" into a scale according to how well you know/understand them
     - 1 run app
